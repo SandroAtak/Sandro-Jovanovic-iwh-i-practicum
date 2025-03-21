@@ -4,6 +4,17 @@ html
     title= title
     link(rel="stylesheet" href="/css/style.css")
   body
-    h1 Beatles Form
-
+    h1 Update Beatles Form
+    form(action="/update-cobj" method="POST")
+      label(for="name") Name:
+      input(type="text" name="name" required)
+      br
+      label(for="instrument") Instrument:
+      input(type="text" name="instrument")
+      br
+      label(for="birth_year") Birth Year:
+      input(type="text" name="birth_year")
+      br
+      button(type="submit") Submit
+    br
     a(href="/") Return to the homepage
