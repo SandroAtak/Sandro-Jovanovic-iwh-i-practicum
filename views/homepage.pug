@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Beatles
+    
+  body
+    h1 List of Beatles
+    table
+      thead
+        tr
+          th Name
+          th Instrument
+          th Year of Birth
+      tbody
+        each beatle in data
+          tr
+            td= beatle.properties.name
+            td= beatle.properties.instrument
+            td= beatle.properties.birth_year
